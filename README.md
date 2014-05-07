@@ -2,6 +2,10 @@ Test3
 =====
 
 实训三 /研讨2
+test3_old.c：
+
+
+
 splint debug
 错误显示：
 witchblade-K43SV D # splint test3_old.c
@@ -16,10 +20,18 @@ A possibly null pointer is passed as a parameter corresponding to a formal
 parameter with no /*@null@*/ annotation. If NULL may be used for this
 parameter, add a /*@null@*/ annotation to the function parameter declaration.
 (Use -nullpass to inhibit warning)
-test3_old.c:6:21: Storage ptr becomes null
-
+test3_old.c:6:21: Storage ptr becomes n
 Finished checking --- 2 code warnings
-valgrid debug
+
+
+
+
+system_pro_old.c:
+
+
+
+
+valgrind debug
 错误显示：
 Process terminating with default action of signal 11 (SIGSEGV)
 ==6045== Access not within mapped region at address 0x0
