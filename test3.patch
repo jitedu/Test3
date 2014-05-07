@@ -1,0 +1,15 @@
+--- test3_old.c	2014-05-07 16:22:18.923503296 +0800
++++ test3_new.c	2014-05-07 16:22:18.923503296 +0800
+@@ -1,8 +1,6 @@
+ #include<stdio.h>
+-#include<stdlib.h>
+-#include<string.h>
+-void main()
+-{
+-        char *ptr = NULL;
+-	    strcpy(ptr, "TEST");
++int main(){
++	char *ptr=(char*)malloc(10);
++	strcpy(ptr,"123");
++	return 0;
+ }
