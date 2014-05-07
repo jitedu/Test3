@@ -1,0 +1,12 @@
+--- system_pro_old.c	2014-05-07 16:54:39.996004640 +0800
++++ system_pro_new.c	2014-05-07 16:54:39.996004640 +0800
+@@ -2,6 +2,7 @@
+ #include<stdlib.h>
+ void main()
+ {
+-	int *ptr=(int *)0;
+-	*ptr=100;
++	int *ptr;
++	int a=100;
++	ptr=&a;
+ }
